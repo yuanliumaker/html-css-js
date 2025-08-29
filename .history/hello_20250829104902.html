@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--标题-->>
+    <h1 align="left">一级标题</h1>
+    <h2 align="right">二级标题</h2>
+    <h3 align="center">三级标题</h3>
+    <h4>四级标题</h4>
+    <h5>五级标题</h5>
+    <h6>六级标题</h6>
+    <!--段落-->
+    <!-- br表示换行 hr表示水平线 width属性表示水平线的宽度 size 表示线的高度 -->
+    <p>我是一个段落标签</p>
+    <p>如果您希望在不产生一个<br>新段落的情况下进行换行</p>
+    <hr color="red" width="300px" size="5px" align="left">
+    <!--img 图片 src:图片路径 widht 图片宽度 height 高度-->
+    <img src="https://www.runoob.com/wp-content/uploads/2014/04/html-logo.png" alt="这是图片无法显示时的替代文字" title="鼠标悬停时显示的文字" width="200px" height="100px">
+
+    <br>
+    <!---超文本链接
+    使用标签<a>来设置超文本链接 href属性表示链接的地址-->
+    <a href="https://www.baidu.com">百度官网</a>
+
+    <!--文本-->
+    <br>
+        <b>加粗文本</b><br>
+        <strong>强调文本</strong><br>
+        <i>斜体文本</i><br>
+        <em>强调文本</em><br> 
+        <del>删掉文本</del><br>
+    <!--列表:外面用ol包裹，每一条用li-- 且有属性type 1 a A i I--和latex 列表可以嵌套-->
+    <br>
+    <ol type="a">
+        <li>有序列表1</li>
+        <li>有序列表2</li>
+        <li>有序列表3</li>
+    </ol>
+    <br>
+    <!--无序列表-- type属性 disc：默认实心圆 circle：空心圆 square：方块 none:无-->
+    <ul >
+        <li>无序列表1</li>
+        <li>无序列表2</li>
+        <li>无序列表3</li>
+    <ul>
+
+
+
+    <!--表格 tr：行 td:列 border:设置表格的边框 width:设置表格宽度 height:表格高度-->
+    <br>
+    <table border="1" width="300px" height="200px">
+        <tr>
+            <td>(1,1)</td>
+            <td>(1,2)</td>
+            <td>(1,3)</td>
+        </tr>
+        <tr>
+            <td>(2,1)</td>
+            <td>(2,2)</td>
+            <td>(2,3)</td>
+        </tr>
+        <tr>
+            <td>(3,1)</td>
+            <td>(3,2)</td>
+            <td>(3,3)</td>
+        </tr>
+    </table>
+
+
+
+    <!--表格之合并 rowspan:合并行 colspan:列合并 如colspan="2"表示合并2个单元格-->
+    <br>
+    <table border="1" width="300px" height="200px">
+        <tr>
+            <td>(1,1)</td>
+            <td>(1,2)</td>
+            <td>(1,3)</td>
+        </tr>
+        <tr>
+            <td colspan="2">(2,1)</td>
+            <td>(2,2)</td>
+            <td>(2,3)</td>
+        </tr>
+        <tr>
+            <td>(3,1)</td>
+            <td>(3,2)</td>
+            <td>(3,3)</td>
+        </tr>
+    </table>
+
+    <!--表单，表单在web 网页中用来给用户填写信息，从而能采用用户信息，使网页具有交互的功能
+    所有的用户输入内容的地方都是用表单来填写，如登录注册、搜索框等-->
+    <!--表单是由容器和控件组成的，一个表单一般应该包含用户填写信息的输入框，提交按钮等，这些输入
+    框，按钮叫做空间，表单就是容器，他能够容纳各种各样的控件-->
+
+</body>
+</html>

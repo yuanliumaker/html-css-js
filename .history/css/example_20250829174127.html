@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 外部样式表 放在head处，link 相当于下面的内部样式                                                        style,相当于latex template-->
+    <link rel="stylesheet" href="./public.css">
+    <!-- <style>
+        h3{
+            color:red;
+            font-size:30px;
+        }
+    </style> -->
+    <style>
+        span{
+            color:red;
+        }
+    </style>
+    <!-- 类选择器 class 规定用圆点来定义，针对你想要的所有标签来使用-->
+    <style>
+     .qq{
+        color:blue;
+        font-size:30px;
+     }
+     </style>
+      <!-- id选择器：针对某一个特定的标签来使用，只能使用一次.css中的id选择器以#来定义 
+     注意id是唯一的，不能以数字开头 -->
+    <style>
+        #ww{
+            color:green;
+            font-size:40px;
+        }
+    </style>
+</head>
+<body>
+    <h3>CSS实例</h3>
+    <p>学完<span>前端</span>学后端</p>
+    <p class="qq">梦奇饿了呀 </p>
+    <p id="ww">我是谁</p>
+   
+</body>
