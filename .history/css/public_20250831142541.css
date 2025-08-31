@@ -25,6 +25,3 @@ background-image:设置背景图片
 background-position:设置图片显示位置
 background-repeat:设置图片如何填充
 background-size:设置图片大小属性 */
-/* 盒子模型:所有html 元素可以看作盒子,css盒模型本质上是一个盒子,封装周围的html元素,他包括
-外边距(margin): 相当与latex中的vspace hspace 两个块之间设置距离
-,边框(border),内边距(padding),和实际内容(content) */

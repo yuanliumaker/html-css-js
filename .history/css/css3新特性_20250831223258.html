@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width:30px;
+            height:30px;
+            background-color: orange;
+            border-radius: 5px;/*圆角特性*/
+            margin:0 auto;/*即上下为0,左右平均分配即中间*/
+            box-shadow: 10px 10px 20px rgba(0, 0,0,0.5);/*hshadow:必选,水平阴影的位置,v-shadow:必选:垂直阴影的
+            位置,blur:可选:模糊距离 color:阴影的颜色*/
+        }
+        /* 动画 */
+        .box2{
+            width:200px;
+            height:200px;
+            background-color: aqua;
+            animation:myAnim 3s linear 0s infinite;/*动画名,动画放3s,匀速播放动画 ,动画开始时间,无限循环*/
+
+        }
+        div:hover{
+            animation-play-state: paused;/*hover伪对象设置动画触发,当鼠标停留上去触发动画效果*/
+        }
+        @keyframes myAnim{
+            /* 设置动画开始 中间 结束 */
+            0%{
+                background-color: red;
+            }
+            50%{
+                background-color: aqua;
+            }
+            100%{
+                background-color: red;
+            }
+        }
+        /* 媒体查询:会根据设备的大小自动识别加载不同的样式
+        注意media screen and 后面有空格 */
+        /* 手机 */
+        @media screen and (max-width:768px) {
+            .box3{
+                background-color: blue;
+            }
+            p{
+                display:none;/*display属性是否显示内容 block表示显示*/
+            }
+        }
+        /* 平板 */
+        @media screen and (min-width:768px) and(max-width:996px) {
+            .box3{
+                background-color: red;
+            }
+            p{
+                display:none
+            }
+        }
+        @media screen and (min-width:996px)
+        {
+            .box3{
+                background-color: aquamarine;
+            }
+            p{
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"> </div>
+    <div class="box3"> </div>
+    <p>哈哈哈</p>
+</body>
+</html>

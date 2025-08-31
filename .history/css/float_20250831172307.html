@@ -1,0 +1,38 @@
+<!-- float属性定义元素在哪个方向上浮动,任何元素都可以浮动 方向 left right
+ 浮动以后元素脱离了文档流 这样解决了文档流比如说两个块之间存在间隙的问题 
+ 当所有元素同时浮动的时候,会变成水平摆放,向左或者向右 应用场景将元素横向摆放-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width:50px;
+            height:50px;
+            float:left; /* left right none  */
+            background-color:red;   
+        }
+        .container{
+            width:400px;
+            height:400px;
+            background-color:lightblue;
+          
+        }
+        li{
+            float:left;
+            margin:20px;
+        }
+    </style>
+ </head>
+ <body>
+    <div class="box"></div>
+    <div class="container"></div>
+    <ul>
+        <li>导航1</li>
+        <li>导航2</li>
+        <li>导航3</li>
+    </ul>
+ </body>
+ </html>

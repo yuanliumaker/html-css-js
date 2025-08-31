@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width:400px;
+            height:400px;
+            background-color:red;
+        }
+    </style>
+    <!-- 设置图片背景 -->
+    <style>
+        .box2{
+            width:400px;
+            height:400px;
+            background-image:url(./1.jpg);
+            background-repeat: repeat-x; /* 设置图片重复方式 */
+            /* background-size:400px,400px; 设置图片高度和宽度 */
+            background-size:cover; /* 保持图片纵横比并将图片缩放成完全覆盖背景区域的最小大小*/
+            
+
+        }
+    </style>
+    <!-- 设置图片的位置 默认左上开始渲染图片 left top center  -->
+    <style>
+        .box1{
+            width:400px;
+            height:400px;
+            background-position:left top 
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box1"> </div>
+    <div class="box2"> </div>
+    <div class="box3"> </div>
+</body>
+</html>
