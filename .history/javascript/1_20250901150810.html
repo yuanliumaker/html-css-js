@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        alert("我是弹出框");
+
+        // 基本类型：数字 字符串以及布尔类型
+        var age=10;
+        var name="lyy";
+        var flag=true;
+        // 结构体
+        var user={
+            age:10,
+            name:"lyy",
+            flag:true
+        }
+        console.log(typeof(age))
+
+        /*基本运算 + - * / % ++ -- 
+        比较运算符> < <= >=等
+        布尔运算符 ！取反 && 且 ||或运算
+        简单略*/
+        
+        
+        //if 语句
+        var flag=true;
+        if(flag==true){
+            console.log("true");
+        } 
+
+        // if else 语句
+        if(true){
+            console.log("true") 
+        } 
+        else{
+            console.log("else")
+        }
+        // if if-else if-elseif-else 语句完全和c一样
+        // switch 语句和c一样
+        // 三元运算符 (条件)? 表达式1:表达式2
+        // for 循环 语句 和c一样
+        // while循环 和c 一样
+        // break 跳出整个循环 continue 跳出本轮循环进入下一轮循环
+        // length返回字符串的长度
+        var str="程序员的工作就是敲代码";
+        console.log(str.length)
+        console.log(str.charAt(2))//返回第二个字符“员”
+         //concat 将两个字符串拼接起来 如果不是字符串，则先转成字符串再进行拼接 当然字符串拼接可以直接用+号连接
+         var str1="Hello";
+         var str2="world";
+         var result=str1.concat(str2);
+         console.log(result);  
+        //  substring 从原字符串中去子字符串
+        var str3="we are family";
+        result1=substring(2,6);
+        console.log(result1);
+    </script>
+    
+    
+</body>
+</html>
